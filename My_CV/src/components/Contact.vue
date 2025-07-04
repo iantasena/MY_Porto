@@ -11,7 +11,7 @@ atau bertanya.</p>
 Kirim Email
 </a>
 <div class="flex justify-center space-x-6 mb-8">
-<a href="#" target="_blank" class="text-gray-400 hover:textwhite transition-colors duration-300">GitHub</a>
+<a href="https://github.com/iantasena" target="_blank" class="text-gray-400 hover:textwhite transition-colors duration-300">GitHub</a>
 <a href="#" target="_blank" class="text-gray-400 hover:textwhite transition-colors duration-300">LinkedIn</a>
 </div>
 <p class="text-gray-500">&copy; {{ new Date().getFullYear() }}
