@@ -2,20 +2,20 @@
 const educationHistory = [
   {
     id: 1,
-    period: '2015 - 2019',
-    institution: 'Universitas Indonesia',
-    major: 'S1 - Ilmu Komputer'
+    period: '2019 - Sekarang',
+    institution: 'Universitas Amikom Yogyakarta',
+    major: 'S1 - Informatika'
   },
   {
     id: 2,
-    period: '2012 - 2015',
-    institution: 'SMA Negeri 1 Depok',
+    period: '2019-2022',
+    institution: 'SMA Negeri 2 Magelang',
     major: 'Ilmu Pengetahuan Alam'
   },
   {
     id: 3,
-    period: '2009 - 2012',
-    institution: 'SMP Negeri 2 Yogyakarta',
+    period: '2017-2019',
+    institution: 'SMP BIAS Yogyakarta',
     major: 'Siswa'
   }
 ];
