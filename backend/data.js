@@ -12,28 +12,22 @@ const educationHistory = [
     institution: 'SMA Negeri 2 Magelang',
     major: 'Ilmu Pengetahuan Alam'
   },
-  {
-    id: 3,
-    period: '2017-2019',
-    institution: 'SMP BIAS Yogyakarta',
-    major: 'Siswa'
-  }
 ];
-
 const skills = [
   { name: 'JavaScript', level: 'Mahir' },
   { name: 'Vue.js', level: 'Mahir' },
   { name: 'Node.js', level: 'Menengah' },
   { name: 'Tailwind CSS', level: 'Mahir' },
-  { name: 'HTML5 & CSS3', level: 'Mahir' },
+  { name: 'Bootstrap', level: 'Dasar' },
   { name: 'Express.js', level: 'Menengah'    },
   { name: 'SQL (PostgreSQL)', level: 'Menengah' },
+  { name: 'HTML5 & CSS3', level: 'Mahir' },
   { name: 'Git & GitHub', level: 'Mahir' }
 ];
 const projects = [
   {
     title: 'Website Lucien Avenue',
-    image: '', // Contoh gambar dari Unsplash
+    image: 'Images/Projek1.png', 
     description: 'Website toko sepatu yang menyediakan berbagai macam sepatu',
     tech: ['Vue.js', 'Laravel', 'Node.js'],
     link: 'https://github.com/GITikhsan/LUCIEN-AVENUE-FRONTEND.git',
