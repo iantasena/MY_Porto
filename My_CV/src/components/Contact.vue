@@ -44,12 +44,12 @@ import SectionTitle from './SectionTitle.vue';
       &copy; {{ new Date().getFullYear() }} Puantorian Antasena Handoko, Dibuat dengan
       <span class="flex items-center gap-1">
         Vue.js
-        <img src="/images/VueLogo.png" alt="Vue.js" class="w-5 h-5 inline-block" />
+        <img src="/public/images/VueLogo.png" alt="Vue.js" class="w-5 h-5 inline-block" />
       </span>
       ,
       <span class="flex items-center gap-1">
         Express.js
-        <img src="/images/ExpressLogo.png" alt="Express.js" class="w-5 h-5 inline-block" />
+        <img src="/public/images/ExpressLogo.png" alt="Express.js" class="w-5 h-5 inline-block" />
       </span>
     </p>
   </div>
