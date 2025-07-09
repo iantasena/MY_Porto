@@ -1,7 +1,25 @@
 /* src/assets/main.css */
+@font-face {
+  font-family: 'SF Distant Galaxy';
+  src: url('./fonts/SFDistantGalaxy.ttf') format('truetype'); /* Sesuaikan nama file jika beda */
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-sw-dark text-sw-text;
+  background-image: url('/images/star-wars-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
 /* Style untuk animasi scroll yang akan kita pakai nanti */
 .before-enter {
 opacity: 0;

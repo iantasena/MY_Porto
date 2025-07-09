@@ -1,25 +1,23 @@
 <script setup>
-// Script tetap sama
+// Script setup tidak berubah, tetap fetch data
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import SectionTitle from './SectionTitle.vue';
 const skills = ref([]);
 onMounted(async () => {
-try { const response = await
-axios.get('http://localhost:3000/api/skills'); skills.value =
-response.data; } catch (error) { console.error(error); }
+  try { const response = await axios.get('http://localhost:3000/api/skills'); skills.value = response.data; } catch (error) { console.error(error); }
 });
 </script>
 <template>
-  <section id="skill" class="py-20 bg-gray-800">
-    <div class="container mx-auto px-6">
-      <SectionTitle title="Keahlian & Teknologi" />
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mt-12">
-        <div v-for="skill in skills" :key="skill.name" class="bg-gray-900 p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 border border-gray-700 hover:border-blue-500">
-          <h3 class="text-xl font-bold text-white">{{ skill.name }}</h3>
-          <p class="text-gray-400 mt-2">{{ skill.level }}</p>
-        </div>
+<section id="skill" class="py-20 bg-sw-dark/80 backdrop-blur-sm">
+  <div class="container mx-auto px-6">
+    <SectionTitle title="Keahlian & Teknologi" />
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+      <div v-for="skill in skills" :key="skill.name" class="bg-sw-panel p-6 rounded-lg border border-sw-border text-center transform hover:border-sw-yellow transition-all duration-300 hover:-translate-y-1">
+        <h3 class="text-xl font-starwars text-sw-text">{{ skill.name }}</h3>
+        <p class="text-sw-yellow mt-2">{{ skill.level }}</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 </template>
