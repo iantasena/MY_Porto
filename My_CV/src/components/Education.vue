@@ -1,53 +1,38 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
-import SectionTitle from './SectionTitle.vue'; // Pastikan path ini benar
+import SectionTitle from './SectionTitle.vue';
 
 const educationHistory = ref([]);
 
 onMounted(async () => {
-  try {
-    // Mengambil data dari endpoint backend
-    const response = await axios.get('http://localhost:3000/api/education');
-    educationHistory.value = response.data;
-  } catch (error) {
-    console.error('Gagal mengambil data pendidikan:', error);
-  }
+  try {
+    const response = await axios.get('http://localhost:3000/api/education');
+    educationHistory.value = response.data;
+  } catch (error) {
+    console.error('Gagal mengambil data pendidikan:', error);
+  }
 });
 </script>
 
 <template>
-  <section id="pendidikan" class="py-20 bg-white">
+  <section id="pendidikan" class="py-20 bg-gray-800">
     <div class="container mx-auto px-6">
       <SectionTitle title="Riwayat Pendidikan" />
       <div class="relative mt-12">
-        <div
-          class="absolute h-full border-r-2 border-gray-300 top-0"
-          style="left: 50%; transform: translateX(-50%);">
-        </div>
+        <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-gray-300" aria-hidden="true"></div>
 
-        <div v-for="(edu, index) in educationHistory" :key="edu.id" class="mb-8 flex justify-between items-center w-full">
+        <div class="space-y-8">
+          <div v-for="(edu, index) in educationHistory" :key="edu.id" class="relative flex items-center" :class="[index % 2 === 0 ? 'justify-start' : 'justify-end']">
 
-          <div v-if="index % 2 === 0" class="w-full flex">
-            <div class="w-1/2 pr-8 text-right">
+            <div class="w-1/2 px-4" :class="[index % 2 === 0 ? 'text-right' : 'text-left']">
               <p class="font-semibold text-blue-600">{{ edu.period }}</p>
-              <h3 class="text-2xl font-bold text-gray-800">{{ edu.institution }}</h3>
-              <p class="text-gray-600">{{ edu.major }}</p>
+              <h3 class="text-2xl font-bold text-white">{{ edu.institution }}</h3>
+              <p class="text-gray-300">{{ edu.major }}</p>
             </div>
-            <div class="w-1/2 flex justify-start pl-[15px]"> <div class="w-4 h-4 bg-blue-600 rounded-full z-10"></div>
-            </div>
-          </div>
 
-          <div v-else class="w-full flex">
-            <div class="w-1/2 flex justify-end pr-[15px]"> <div class="w-4 h-4 bg-blue-600 rounded-full z-10"></div>
-            </div>
-            <div class="w-1/2 pl-8 text-left">
-              <p class="font-semibold text-blue-600">{{ edu.period }}</p>
-              <h3 class="text-2xl font-bold text-gray-800">{{ edu.institution }}</h3>
-              <p class="text-gray-600">{{ edu.major }}</p>
-            </div>
+            <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full z-10 border-4 border-white"></div>
           </div>
-
         </div>
       </div>
     </div>
