@@ -5,7 +5,7 @@
       Halo, Saya <span class="text-sw-blue text-shadow-glow-blue">Puantorian A. H.</span>
     </h1>
     <p class="text-xl text-sw-text mb-8 animate-slidein-left" style="animation-delay: 200ms;">
-      Mahasiswa Teknik Informatika yang bersemangat dalam pengembangan web dan desain antarmuka di galaksi ini.
+      Mahasiswa Teknik Informatika yang bersemangat dalam pengembangan web dan desain antarmuka.
     </p>
     <a href="#kontak" class="font-starwars bg-sw-blue text-sw-dark font-bold py-3 px-6 rounded-md hover:bg-sw-blue/80 transition-colors duration-300 inline-block animate-slidein-left" style="animation-delay: 400ms;">
       Hubungi Saya
