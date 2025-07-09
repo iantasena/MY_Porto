@@ -9,15 +9,15 @@ onMounted(async () => {
 });
 </script>
 <template>
-<section id="skill" class="py-20 bg-sw-dark/80 backdrop-blur-sm">
-  <div class="container mx-auto px-6">
-    <SectionTitle title="Keahlian & Teknologi" />
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-      <div v-for="skill in skills" :key="skill.name" class="bg-sw-panel p-6 rounded-lg border border-sw-border text-center transform hover:border-sw-yellow transition-all duration-300 hover:-translate-y-1">
-        <h3 class="text-xl font-starwars text-sw-text">{{ skill.name }}</h3>
-        <p class="text-sw-yellow mt-2">{{ skill.level }}</p>
+  <section id="skill" class="py-20">
+    <div class="container mx-auto px-6">
+      <SectionTitle title="Keahlian & Teknologi" />
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div v-for="skill in skills" :key="skill.name" class="bg-sw-panel p-6 rounded-lg border border-sw-border text-center transform hover:border-sw-accent transition-all duration-300 hover:-translate-y-1">
+          <h3 class="text-xl font-starwars text-sw-dark">{{ skill.name }}</h3>
+          <p class="text-sw-text mt-2">{{ skill.level }}</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
