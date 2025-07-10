@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'SF Distant Galaxy';
   /* Pastikan nama file ini sama dengan file yang kamu pindahkan */
-  src: url('/Fonts/SFDistantGalaxy.ttf') format('truetype');
+  src: url('/fonts/SFDistantGalaxy.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
