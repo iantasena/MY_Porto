@@ -1,25 +1,25 @@
 const express = require('express');
-const cors = require('cors'); // Untuk mengizinkan akses dari frontend
-const { educationHistory, skills, projects } = require('./data.js'); // Impor data
+const cors = require('cors'); // Impor paket cors
 
 const app = express();
-const port = 3000;
+const port = 3000; // Backend akan berjalan di port 3000
 
-app.use(cors()); // Gunakan middleware CORS
+// --- PENTING: Aktifkan CORS ---
+// Ini memberitahu server untuk mengizinkan permintaan dari alamat lain (frontend-mu)
+app.use(cors());
 
-// Endpoint untuk data pendidikan
-app.get('/api/education', (req, res) => {
-  res.json(educationHistory);
-});
+// Contoh data yang akan dikirim
+const users = [
+  { id: 1, name: 'Puantorian Handoko', job: 'Galactic Developer' },
+  { id: 2, name: 'Budi Santoso', job: 'Web Warrior' },
+  { id: 3, name: 'Siti Aminah', job: 'UI/UX Architect' },
+];
 
-// Endpoint untuk data skill
-app.get('/api/skills', (req, res) => {
-  res.json(skills);
-});
-
-// Endpoint untuk data proyek
-app.get('/api/projects', (req, res) => {
-  res.json(projects);
+// Membuat API Endpoint
+// Ini adalah "pintu" yang bisa diakses di http://localhost:3000/api/users
+app.get('/api/users', (req, res) => {
+  // Mengirim data users sebagai response dalam format JSON
+  res.json(users);
 });
 
 app.listen(port, () => {
