@@ -5,8 +5,15 @@ import axios from 'axios';
 import SectionTitle from './SectionTitle.vue';
 const educationHistory = ref([]);
 onMounted(async () => {
-  try { const response = await axios.get('http://localhost:3000/api/education'); educationHistory.value = response.data; } catch (error) { console.error(error); }
+  try {
+    // URL diubah menjadi path relatif agar berfungsi di Vercel
+    const response = await axios.get('/api/education');
+    educationHistory.value = response.data;
+  } catch (error) {
+    console.error('Gagal mengambil data pendidikan:', error);
+  }
 });
+</script>
 </script>
 <template>
 <section id="pendidikan" class="py-20 bg-sw-panel/80 backdrop-blur-sm">
