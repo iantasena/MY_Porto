@@ -14,7 +14,7 @@ onMounted(async () => {
   }
 });
 </script>
-</script>
+
 <template>
 <section id="pendidikan" class="py-20 bg-sw-panel/80 backdrop-blur-sm">
   <div class="container mx-auto px-6">
