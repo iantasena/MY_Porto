@@ -7,14 +7,29 @@
     },
     {
       "src": "My_CV/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "outputDirectory": "dist"
-      }
+      "use": "@vercel/static-build"
     }
   ],
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/backend/index.js" },
-    { "source": "/(.*)", "destination": "/My_CV/dist/index.html" }
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend/index.js"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/My_CV/images/$1"
+    },
+    {
+      "src": "/fonts/(.*)",
+      "dest": "/My_CV/fonts/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/My_CV/favicon.ico"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/My_CV/index.html"
+    }
   ]
 }
