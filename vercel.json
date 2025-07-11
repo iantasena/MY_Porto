@@ -16,16 +16,12 @@
       "dest": "/backend/index.js"
     },
     {
-      "src": "/images/(.*)",
-      "dest": "/My_CV/images/$1"
+      "src": "/assets/(.*)",
+      "dest": "/My_CV/assets/$1"
     },
     {
       "src": "/fonts/(.*)",
       "dest": "/My_CV/fonts/$1"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/My_CV/favicon.ico"
     },
     {
       "src": "/(.*)",
