@@ -1,17 +1,36 @@
-// Salin dan ganti seluruh isi file backend/index.js dengan ini:
-
+JavaScript
+// File: backend/index.js
 const express = require('express');
 const cors = require('cors');
-const { educationHistory, skills, projects } = require('./data'); // Pastikan file data.js ada di folder backend
+const { sql } = require('@vercel/postgres');
 const app = express();
-
 app.use(cors());
-app.use(express.json());
+// Endpoint API yang akan mengambil data dari Database
+app.get('/api/education', async (req, res) => {
+try {
+const { rows } = await sql`SELECT * FROM education ORDER BY period
+DESC;`;
+res.status(200).json(rows);
+} catch (error) {
+res.status(500).json({ error: 'Gagal mengambil data pendidikan' });
+}
+});
+app.get('/api/skills', async (req, res) => {
+try {
+const { rows } = await sql`SELECT * FROM skills;`;
+res.status(200).json(rows);
+} catch (error) {
+res.status(500).json({ error: 'Gagal mengambil data skill' });
 
-// --- API Endpoints ---
-app.get('/api/education', (req, res) => res.json(educationHistory));
-app.get('/api/skills', (req, res) => res.json(skills));
-app.get('/api/projects', (req, res) => res.json(projects));
-
-// Ekspor aplikasi agar bisa digunakan oleh Vercel
-module.exports = app;   
+}
+});
+app.get('/api/projects', async (req, res) => {
+try {
+const { rows } = await sql`SELECT * FROM projects;`;
+res.status(200).json(rows);
+} catch (error) {
+res.status(500).json({ error: 'Gagal mengambil data proyek' });
+}
+});
+// Wajib ada agar Vercel bisa menjalankan backend
+module.exports = app;
