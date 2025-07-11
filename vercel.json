@@ -10,14 +10,26 @@
       "use": "@vercel/static-build"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/(.*)",
-      "destination": "/backend/index.js"
+      "src": "/api/(.*)",
+      "dest": "/backend/index.js"
     },
     {
-      "source": "/(.*)",
-      "destination": "/My_CV/index.html"
+      "src": "/Images/(.*)",
+      "dest": "/My_CV/Images/$1"
+    },
+    {
+      "src": "/fonts/(.*)",
+      "dest": "/My_CV/fonts/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/My_CV/favicon.ico"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/My_CV/index.html"
     }
   ]
 }
