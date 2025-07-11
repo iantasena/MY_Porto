@@ -3,11 +3,13 @@
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import SectionTitle from './SectionTitle.vue';
+const skills = ref([]); // Variabelnya bernama 'skills'
+
 onMounted(async () => {
   try {
-    // URL diubah menjadi path relatif agar berfungsi di Vercel
     const response = await axios.get('/api/skills');
-    educationHistory.value = response.data;
+    // BENAR: Simpan data ke variabel 'skills.value'
+    skills.value = response.data;
   } catch (error) {
     console.error('Gagal mengambil data skills:', error);
   }

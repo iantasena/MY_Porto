@@ -8,11 +8,11 @@ const projects = ref([]);
 
 onMounted(async () => {
   try {
-    // URL diubah menjadi path relatif agar berfungsi di Vercel
     const response = await axios.get('/api/projects');
-    educationHistory.value = response.data;
+    // BENAR: Simpan data ke variabel 'projects.value'
+    projects.value = response.data;
   } catch (error) {
-    console.error('Gagal mengambil data projects:', error);
+    console.error('Gagal mengambil data proyek:', error);
   }
 });
 </script>
