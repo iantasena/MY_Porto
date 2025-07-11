@@ -23,6 +23,10 @@
       "src": "/fonts/(.*)",
       "dest": "/My_CV/fonts/$1"
     },
+     {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/My_CV/index.html"
