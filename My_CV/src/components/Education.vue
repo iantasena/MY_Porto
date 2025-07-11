@@ -1,17 +1,18 @@
 <script setup>
-// Script setup tidak berubah, tetap fetch data
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
-import SectionTitle from './SectionTitle.vue';
+// import SectionTitle from './SectionTitle.vue'; // Aktifkan jika Anda punya
+komponen ini
 const educationHistory = ref([]);
+
+const API_URL = import.meta.env.PROD ? '/api/education' :
+'http://localhost:3000/api/education';
 onMounted(async () => {
-  try {
-    // URL diubah menjadi path relatif agar berfungsi di Vercel
-    const response = await axios.get('/api/education');
-    educationHistory.value = response.data;
-  } catch (error) {
-    console.error('Gagal mengambil data pendidikan:', error);
-  }
+try {
+educationHistory.value = (await axios.get(API_URL)).data;
+} catch (error) {
+console.error('Gagal mengambil data pendidikan:', error);
+}
 });
 </script>
 

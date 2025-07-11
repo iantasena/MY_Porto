@@ -1,18 +1,17 @@
 <script setup>
-// Script setup tidak berubah, tetap fetch data
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
-import SectionTitle from './SectionTitle.vue';
-const skills = ref([]); // Variabelnya bernama 'skills'
-
+// import SectionTitle from './SectionTitle.vue'; // Aktifkan jika Anda punya
+komponen ini
+const skills = ref([]);
+const API_URL = import.meta.env.PROD ? '/api/skills' :
+'http://localhost:3000/api/skills';
 onMounted(async () => {
-  try {
-    const response = await axios.get('/api/skills');
-    // BENAR: Simpan data ke variabel 'skills.value'
-    skills.value = response.data;
-  } catch (error) {
-    console.error('Gagal mengambil data skills:', error);
-  }
+try {
+skills.value = (await axios.get(API_URL)).data;
+} catch (error) {
+console.error('Gagal mengambil data skill:', error);
+}
 });
 </script>
 <template>
