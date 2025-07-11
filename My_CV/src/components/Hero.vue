@@ -12,7 +12,7 @@
     </a>
   </div>
   <div class="md:w-1/2 flex justify-center animate-slidein-right">
-    <img src="/images/foto.jpg" alt="Foto Profil" class="w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-white">
+    <img src="/images/foto.png" alt="Foto Profil" class="w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-white">
   </div>
 </section>
 </template>
