@@ -29,7 +29,7 @@
     },
     {
       "src": "/Images/(.*)",
-      "dest": "/My_CV/public/Images/$1"
+      "dest": "/My_CV/Images/$1"
     }
   ]
 }
