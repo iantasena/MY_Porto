@@ -10,14 +10,17 @@
       "use": "@vercel/static-build"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/(.*)",
-      "destination": "/backend/index.js"
+      "src": "/api/(.*)",
+      "dest": "/backend/index.js"
     },
     {
-      "source": "/(.*)",
-      "destination": "/My_CV/index.html"
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/My_CV/index.html"
     }
   ]
 }
