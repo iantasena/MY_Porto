@@ -26,6 +26,10 @@
     {
       "src": "/(.*)",
       "dest": "/My_CV/index.html"
+    },
+    {
+      "src": "/Images/(.*)",
+      "dest": "/My_CV/public/Images/$1"
     }
   ]
 }
