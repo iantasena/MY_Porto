@@ -23,9 +23,6 @@ import SectionTitle from './SectionTitle.vue';
       <a href="https://github.com/iantasena" target="_blank" rel="noopener noreferrer" class="inline-block">
         <img src="/images/github.svg" alt="Git" class="w-12 h-12 hover:scale-105 transition-transform duration-300">
       </a>
-      <a href="https://github.com/iantasena" target="_blank" rel="noopener noreferrer" class="inline-block">
-        <img src="/images/linkedin.svg" alt="Git" class="w-12 h-12 hover:scale-105 transition-transform duration-300">
-      </a>
     </div>
   </div>
 </div>

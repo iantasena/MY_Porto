@@ -3,36 +3,37 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
-     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        'sw-dark': '#111827',     // Hitam untuk teks
-        'sw-panel': '#ffffff',    // Putih untuk panel/kartu
-        'sw-border': '#e5e7eb',  // Abu-abu muda untuk border
-        'sw-text': '#374151',     // Abu-abu gelap untuk teks paragraf
-        'sw-accent': '#3b82f6',   // Biru sebagai aksen utama
+        // Palet Warna Space & Neon
+        'space-dark': '#0D0D2B',    // Latar belakang utama (biru sangat gelap)
+        'space-panel': '#161633',   // Latar belakang panel/kartu
+        'space-border': '#3a3a5e',  // Warna border
+        'space-text': '#D0D0FF',     // Warna teks utama (putih kebiruan)
+        'space-heading': '#FFFFFF', // Warna judul (putih bersih)
+
+        // Aksen Neon Utama
+        'neon-cyan': '#00FFFF',
+
+        // Warna Neon untuk Skill Bars
+        'neon-green': '#39FF14',
+        'neon-pink': '#FF00FF',
+        'neon-orange': '#FFAC1C',
+        'neon-blue': '#1E90FF',
       },
       fontFamily: {
-        'sans': ['ui-sans-serif', 'system-ui'],
-        'starwars': ['"SF Distant Galaxy"', 'sans-serif'],
+        // Tetap menggunakan font Star Wars Anda
+        starwars: ['SFDistantGalaxy', 'sans-serif'],
+        sans: ['"Segoe UI"', 'Roboto', 'system-ui'], // Font standar untuk paragraf
       },
+      // Menambahkan efek "glow" untuk teks neon
       dropShadow: {
-        'glow': '0 0 8px rgba(59, 130, 246, 0.4)', // Efek glow biru
-      },
-      animation: {
-        'fade-in': 'fade-in 1s ease-out forwards',
-        'slidein-left': 'slidein-left 1s ease-out forwards',
-        'slidein-right': 'slidein-right 1s ease-out forwards',
-      },
-      keyframes: {
-        'fade-in': { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
-        'slidein-left': { '0%': { transform: 'translateX(-100px)', opacity: '0' }, '100%': { transform: 'translateX(0)', opacity: '1' } },
-        'slidein-right': { '0%': { transform: 'translateX(100px)', opacity: '0' }, '100%': { transform: 'translateX(0)', opacity: '1' } },
-      },
+        'glow-cyan': '0 0 8px rgba(0, 255, 255, 0.7)',
+        'glow-white': '0 0 10px rgba(255, 255, 255, 0.5)',
+      }
     },
   },
-  plugins: [], // Pastikan kosong
+  plugins: [],
 }

@@ -14,15 +14,42 @@ const educationHistory = [
   },
 ];
 const skills = [
-  { name: 'JavaScript', level: 'Menengah', width:'50%' },
-  { name: 'Vue.js', level: 'Menengah', width:'65%' },
-  { name: 'Node.js', level: 'Menengah', width:'50%' },
-  { name: 'Tailwind CSS', level: 'Menengah', width:'65%' },
-  { name: 'Bootstrap', level: 'Menengah', width:'55%' },
-  { name: 'Express.js', level: 'basic', width:'30%'},
-  { name: 'SQL (PostgreSQL)', level: 'Menengah', width:'65%'},
-  { name: 'HTML5 & CSS3', level: 'Menengah', width:'65%'},
-  { name: 'Git & GitHub', level: 'Mahir', width:'80%' }
+  {
+    "name": "Vue.js",
+    "level": "Mahir",
+    "width": "85%",
+    "colorClass": "bg-neon-green"
+  },
+  {
+    "name": "TailwindCSS",
+    "level": "Mahir",
+    "width": "90%",
+    "colorClass": "bg-neon-cyan"
+  },
+  {
+    "name": "JavaScript",
+    "level": "Menengah",
+    "width": "75%",
+    "colorClass": "bg-neon-orange"
+  },
+  {
+    "name": "Node.js",
+    "level": "Menengah",
+    "width": "60%",
+    "colorClass": "bg-neon-green"
+  },
+  {
+    "name": "UI/UX Design",
+    "level": "Dasar",
+    "width": "50%",
+    "colorClass": "bg-neon-pink"
+  },
+  {
+    "name": "Python",
+    "level": "Mahir",
+    "width": "80%",
+    "colorClass": "bg-neon-blue"
+  }
 ];
 const projects = [
   {
