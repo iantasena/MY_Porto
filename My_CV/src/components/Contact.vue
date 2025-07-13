@@ -16,6 +16,11 @@ import SectionTitle from './SectionTitle.vue';
         <span class="text-sw-border">|</span>
         <a href="https://github.com/iantasena" target="_blank" class="text-sw-text hover:text-sw-accent transition-transform duration-300 hover:scale-110">GitHub</a>
       </div>
+      <div class="flex items-center gap-4 mb-8 animate-slidein-left" style="animation-delay: 300ms;">
+  <a href="https://steamcommunity.com/profiles/76561198442558338/" target="_blank" rel="noopener noreferrer" class="inline-block mb-4">
+  <img src="/images/steam.svg" alt="Steam" class="w-12 h-12 hover:scale-105 transition-transform duration-300">
+</a>
+</div>
     </div>
     <div class="flex justify-center mt-12 pt-8 border-t border-sw-border">
       <p class="text-sw-text/70 text-sm font-sans">&copy; {{ new Date().getFullYear() }} Puantorian Antasena Handoko.</p>
