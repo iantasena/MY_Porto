@@ -2,7 +2,7 @@
 <section id="profil" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center min-h-screen">
   <div class="md:w-1/2 mb-10 md:mb-0">
     <h1 class="text-5xl font-starwars text-sw-dark drop-shadow-glow mb-4 animate-slidein-left">
-      Halo, Saya <span class="text-sw-accent">Puantorian A. H.</span>
+      Halo, Saya <span class="text-sw-accent">Puantorian Antasena Handoko</span>
     </h1>
     <p class="text-xl text-sw-text mb-8 animate-slidein-left font-sans" style="animation-delay: 200ms;">
       Saya Puantorian Antasena Handoko Mahasiswa Teknik Informatika yang bersemangat dalam pengembangan
