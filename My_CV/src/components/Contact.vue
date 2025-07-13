@@ -9,22 +9,26 @@ import SectionTitle from './SectionTitle.vue';
     <a href="mailto:puantorian12@gmail.com" class="font-starwars bg-sw-accent text-white font-bold py-3 px-6 rounded-md hover:bg-sw-accent/80 transition-colors inline-block mb-12">
       Kirim Pesan
     </a>
-<div class="mt-8">
-  <h2 class="text-lg font-semibold mb-4 text-sw-dark font-sans">Saluran Komunikasi</h2>
 
-  <div class="flex justify-center items-center gap-6 font-sans mb-8">
-    <a href="https://www.instagram.com/iantasena" target="_blank" class="text-sw-text hover:text-sw-accent transition-transform duration-300 hover:scale-110">Instagram</a>
-    <span class="text-sw-border">|</span>
-    <a href="https://github.com/iantasena" target="_blank" class="text-sw-text hover:text-sw-accent transition-transform duration-300 hover:scale-110">GitHub</a>
-  </div>
 
   <div class="flex flex-col items-center justify-center gap-4 mb-8 animate-fadein" style="animation-delay: 300ms;">
-    <h1 class="text-xl font-sans text-sw-dark">Sosial Media Saya :</h1>
-    <a href="https://steamcommunity.com/profiles/76561198442558338/" target="_blank" rel="noopener noreferrer" class="inline-block">
-      <img src="/images/steam.svg" alt="Steam" class="w-12 h-12 hover:scale-105 transition-transform duration-300">
-    </a>
+    <h1 class="text-xl font-sans text-sw-dark">Saluran Komunikasi</h1>
+    <div class="flex gap-6">
+      <a href="https://www.instagram.com/iantasena" target="_blank" rel="noopener noreferrer" class="inline-block">
+        <img src="/images/instagram.svg" alt="Instagram" class="w-12 h-12 hover:scale-105 transition-transform duration-300">
+      </a>
+      <a href="https://steamcommunity.com/profiles/76561198442558338/" target="_blank" rel="noopener noreferrer" class="inline-block">
+        <img src="/images/steam.svg" alt="Steam" class="w-12 h-12 hover:scale-105 transition-transform duration-300">
+      </a>
+      <a href="https://github.com/iantasena" target="_blank" rel="noopener noreferrer" class="inline-block">
+        <img src="/images/github.svg" alt="Git" class="w-12 h-12 hover:scale-105 transition-transform duration-300">
+      </a>
+      <a href="https://github.com/iantasena" target="_blank" rel="noopener noreferrer" class="inline-block">
+        <img src="/images/linkedin.svg" alt="Git" class="w-12 h-12 hover:scale-105 transition-transform duration-300">
+      </a>
+    </div>
   </div>
 </div>
-  </div>
+
 </footer>
 </template>
