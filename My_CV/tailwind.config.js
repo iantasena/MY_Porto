@@ -17,11 +17,6 @@ export default {
         // Aksen Neon Utama
         'neon-cyan': '#00FFFF',
 
-        // Warna Neon untuk Skill Bars
-        'neon-green': '#39FF14',
-        'neon-pink': '#FF00FF',
-        'neon-orange': '#FFAC1C',
-        'neon-blue': '#1E90FF',
       },
       fontFamily: {
         // Tetap menggunakan font Star Wars Anda

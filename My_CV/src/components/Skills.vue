@@ -28,8 +28,7 @@ onMounted(async () => {
 
           <div class="w-full bg-sw-border rounded-full h-2.5">
             <div
-              class="h-2.5 rounded-full"
-              :class="skill.colorClass"
+              class="bg-blue-500 h-2.5 rounded-full"
               :style="{ width: skill.width }">
             </div>
           </div>
