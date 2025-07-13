@@ -10,22 +10,26 @@
       "use": "@vercel/static-build"
     }
   ],
-"routes": [
+  "routes": [
     {
       "src": "/api/(.*)",
       "dest": "/backend/index.js"
     },
     {
-  "src": "/assets/(.*)",
+      "src": "/assets/(.*)",
       "dest": "/My_CV/assets/$1"
     },
     {
       "src": "/fonts/(.*)",
       "dest": "/My_CV/fonts/$1"
     },
+     {
+       "src": "/images/(.*)",
+      "dest": "/My_CV/images/$1" 
+    },
     {
       "src": "/(.*)",
       "dest": "/My_CV/index.html"
     }
-  ]
+    ]
 }
