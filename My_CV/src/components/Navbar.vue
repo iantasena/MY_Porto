@@ -5,7 +5,7 @@ const isMenuOpen = ref(false);
 <template>
   <header class="bg-space-panel/40 backdrop-blur-md sticky top-0 z-50 border-b border-space-border">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-1x font-starwars text-space-heading">Puantorian Antasena Handoko</div>
+      <div class="text-1x font-starwars ">Puantorian Antasena Handoko</div>
       <ul class="hidden md:flex space-x-6 font-starwars text-sm">
         <li><a href="#profil" class="text-space-text hover:text-neon-cyan transition-colors">Profil</a></li>
         <li><a href="#pendidikan" class="text-space-text hover:text-neon-cyan transition-colors">Pendidikan</a></li>
