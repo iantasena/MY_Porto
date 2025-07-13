@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'SF Distant Galaxy';
+  font-family: 'SFDistantGalaxy';
   /* Pastikan nama file ini sama dengan file yang kamu pindahkan */
   src: url('/fonts/SFDistantGalaxy.ttf') format('truetype');
   font-weight: normal;
