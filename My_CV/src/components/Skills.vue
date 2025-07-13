@@ -8,7 +8,10 @@ const skills = ref([]); // Variabelnya bernama 'skills'
 onMounted(async () => {
   try {
     const response = await axios.get('/api/skills');
-    // BENAR: Simpan data ke variabel 'skills.value'
+
+    // TAMBAHKAN BARIS INI UNTUK MELIHAT DATA DI CONSOLE
+    console.log('Data skills yang diterima:', response.data);
+
     skills.value = response.data;
   } catch (error) {
     console.error('Gagal mengambil data skills:', error);
