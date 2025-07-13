@@ -27,7 +27,7 @@ const skills = [
 const projects = [
   {
     title: 'Website Lucien Avenue',
-    image: 'Images/Projek1.png', 
+    image: 'images/projek1.png', 
     description: 'Website toko sepatu yang menyediakan berbagai macam sepatu',
     tech: ['Vue.js', 'Laravel', 'Node.js'],
     link: 'https://github.com/GITikhsan/LUCIEN-AVENUE-FRONTEND.git',
