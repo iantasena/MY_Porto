@@ -11,7 +11,5 @@ import { RouterView } from 'vue-router';
 </template>
 <style>
 /* Anda bisa menambahkan style global di sini jika perlu */
-body {
-  background-color: #f8fafc; /* bg-gray-50 */
-}
+
 </style>
