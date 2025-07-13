@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
-import { skills } from './data.js';
 import SectionTitle from './SectionTitle.vue';
 const skills = ref([]);
 
