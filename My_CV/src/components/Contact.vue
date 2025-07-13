@@ -12,11 +12,9 @@ import SectionTitle from './SectionTitle.vue';
     <div class="mt-8">
       <h2 class="text-lg font-semibold mb-4 text-sw-dark font-sans">Saluran Komunikasi</h2>
       <div class="flex justify-center items-center gap-6 font-sans">
-        <a href="https://www.instagram.com/URL_PROFIL_ANDA" target="_blank" class="text-sw-text hover:text-sw-accent transition-transform duration-300 hover:scale-110">Instagram</a>
+        <a href="https://www.instagram.com/iantasena" target="_blank" class="text-sw-text hover:text-sw-accent transition-transform duration-300 hover:scale-110">Instagram</a>
         <span class="text-sw-border">|</span>
         <a href="https://github.com/iantasena" target="_blank" class="text-sw-text hover:text-sw-accent transition-transform duration-300 hover:scale-110">GitHub</a>
-        <span class="text-sw-border">|</span>
-        <a href="https://steamcommunity.com/id/NAMA_PROFIL_STEAM" target="_blank" class="text-sw-text hover:text-sw-accent transition-transform duration-300 hover:scale-110">Steam</a>
       </div>
     </div>
     <div class="flex justify-center mt-12 pt-8 border-t border-sw-border">
