@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
+import { skills } from './data.js';
 import SectionTitle from './SectionTitle.vue';
 const skills = ref([]);
 
@@ -14,24 +15,28 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <section id="skill" class="py-20 bg-space-dark">
-    <div class="container mx-auto px-6">
-      <SectionTitle title="Keahlian & Teknologi" />
+  <section id="keahlian" class="py-20">
+    <div class="container mx-auto px-6">
+      <SectionTitle title="Keahlian Saya" />
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+      <div class="mt-12 space-y-8">
+        <div v-for="skill in skills" :key="skill.name" class="font-sans">
 
-        <div v-for="skill in skills" :key="skill.name"
-             class="bg-space-panel p-4 rounded-lg border border-space-border text-left transform hover:-translate-y-1 transition-transform duration-300">
-          <div class="flex justify-between items-center mb-2">
-            <h3 class="font-starwars text-space-heading text-lg">{{ skill.name }}</h3>
-            <p class="text-sm text-space-text font-sans">{{ skill.level }}</p>
-          </div>
-          <div class="w-full bg-space-dark rounded-full h-2.5">
-                        <div class="h-2.5 rounded-full" :class="skill.colorClass" :style="{ width: skill.width }"></div>
-          </div>
-        </div>
+          <div class="flex justify-between mb-1">
+            <span class="text-base font-medium text-sw-dark">{{ skill.name }}</span>
+            <span class="text-sm font-medium text-sw-text">{{ skill.level }}</span>
+          </div>
 
-      </div>
-  </div>
-</section>
+          <div class="w-full bg-sw-border rounded-full h-2.5">
+            <div
+              class="h-2.5 rounded-full"
+              :class="skill.colorClass"
+              :style="{ width: skill.width }">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 </template>

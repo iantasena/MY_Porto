@@ -3,7 +3,7 @@ import { ref } from 'vue';
 const isMenuOpen = ref(false);
 </script>
 <template>
-  <header class="bg-space-panel/70 backdrop-blur-md sticky top-0 z-50 border-b border-space-border">
+  <header class="bg-space-panel/40 backdrop-blur-md sticky top-0 z-50 border-b border-space-border">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <div class="text-2xl font-starwars text-space-heading">Puantorian Antasena Handook</div>
       <ul class="hidden md:flex space-x-6 font-starwars text-sm">
