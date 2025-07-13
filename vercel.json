@@ -7,29 +7,17 @@
     },
     {
       "src": "My_CV/package.json",
-       "use": "@vercel/static-build"
-       }
+      "use": "@vercel/static-build"
+    }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/backend/index.js"
+      "source": "/api/(.*)",
+      "destination": "/backend/index.js"
     },
     {
-      "src": "/images/(.*)",
-      "dest": "/My_CV/images/$1"
-    },
-    {
-      "src": "/fonts/(.*)",
-      "dest": "/My_CV/fonts/$1"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/My_CV/favicon.ico"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/My_CV/index.html"
+      "source": "/(.*)",
+      "destination": "/My_CV/"
     }
   ]
 }
