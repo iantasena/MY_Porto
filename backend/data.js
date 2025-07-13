@@ -12,57 +12,63 @@ const educationHistory = [
     institution: 'SMA Negeri 2 Magelang',
     major: 'Ilmu Pengetahuan Alam'
   },
-   
 ];
-
 const skills = [
   { 
     name: 'Git & GitHub', 
     level: 'Mahir', 
-    width: '80%'// Tertinggi -> Hijau
+    width: '80%',
+    colorClass: 'bg-neon-green' // Tertinggi -> Hijau
   },
   { 
     name: 'Vue.js', 
     level: 'Menengah', 
-    width: '65%'
+    width: '65%',
+    colorClass: 'bg-neon-cyan'
   },
   { 
     name: 'Tailwind CSS', 
     level: 'Menengah', 
-    width: '65%'
+    width: '65%',
+    colorClass: 'bg-neon-cyan'
   },
   { 
     name: 'SQL (PostgreSQL)', 
     level: 'Menengah', 
-    width: '65%'
+    width: '65%',
+    colorClass: 'bg-neon-cyan'
   },
   { 
     name: 'HTML5 & CSS3', 
     level: 'Menengah', 
-    width: '65%'
+    width: '65%',
+    colorClass: 'bg-neon-cyan'
   },
   { 
     name: 'Bootstrap', 
     level: 'Menengah', 
-    width: '55%'
+    width: '55%',
+    colorClass: 'bg-neon-cyan'
   },
   { 
     name: 'JavaScript', 
     level: 'Menengah', 
-    width: '50%'
+    width: '50%',
+    colorClass: 'bg-neon-orange' // Menengah ke bawah -> Oranye
   },
   { 
     name: 'Node.js', 
     level: 'Menengah', 
-    width: '50%'
+    width: '50%',
+    colorClass: 'bg-neon-orange' // Menengah ke bawah -> Oranye
   },
   { 
     name: 'Express.js', 
     level: 'basic', 
-    width: '30%'
+    width: '30%',
+    colorClass: 'bg-neon-pink' // Terendah -> Merah/Pink
   }
 ];
-
 const projects = [
   {
     title: 'Website Lucien Avenue',
