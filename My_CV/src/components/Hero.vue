@@ -8,7 +8,7 @@
       Saya Puantorian Antasena Handoko Mahasiswa Teknik Informatika yang bersemangat dalam pengembangan
       web dan desain antarmuka. Hobby saya adalah bermain game dan jika tertarik :
     </p>
-    <img src="/images/steam.svg" alt="foto steam">
+    <img src="/images/steam.svg" alt="foto_steam" class="w-25 h-25">
     <a href="#kontak" class="font-starwars bg-sw-accent text-white font-bold py-3 px-6 rounded-md hover:bg-sw-accent/80 transition-colors duration-300 inline-block animate-slidein-left" style="animation-delay: 400ms;">
       Hubungi Saya
     </a>
