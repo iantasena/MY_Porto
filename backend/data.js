@@ -12,12 +12,7 @@ const educationHistory = [
     institution: 'SMA Negeri 2 Magelang',
     major: 'Ilmu Pengetahuan Alam'
   },
-   {
-    id: 3,
-    period: '2019-2022',
-    institution: 'SMA Negeri 2 Magelang',
-    major: 'Ilmu Pengetahuan Alam'
-  },
+   
 ];
 
 const skills = [
