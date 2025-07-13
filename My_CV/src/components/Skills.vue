@@ -27,7 +27,7 @@ onMounted(async () => {
             <p class="text-sm text-space-text font-sans">{{ skill.level }}</p>
           </div>
           <div class="w-full bg-space-dark rounded-full h-2.5">
-                        <div class="h-2.5 rounded-full" :class="skill.colorClass" :style="{ width: skill.width }"></div>
+                        <div class="h-2.5 rounded-full"  :style="{ width: skill.width }"></div>
           </div>
         </div>
 
