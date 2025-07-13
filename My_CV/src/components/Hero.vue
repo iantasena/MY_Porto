@@ -2,7 +2,7 @@
   <section id="profil" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center min-h-screen">
 
     <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
-      <h2 class="text-2xl font-sans text-space-text mb-2 animate-slidein-left" style="animation-delay: 100ms;">
+      <h2 class="text-2xl font-starwars text-space-text mb-2 animate-slidein-left" style="animation-delay: 100ms;">
         Halo, Saya
       </h2>
 
