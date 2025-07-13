@@ -22,7 +22,7 @@ const skills = [
   { name: 'Express.js', level: 'basic', width:'30%'},
   { name: 'SQL (PostgreSQL)', level: 'Menengah', width:'65%'},
   { name: 'HTML5 & CSS3', level: 'Menengah', width:'65%'},
-  
+  { name: 'Git & GitHub', level: 'Mahir', width:'80%' }
 ];
 const projects = [
   {
