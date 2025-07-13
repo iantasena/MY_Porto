@@ -3,9 +3,9 @@ import { ref } from 'vue';
 const isMenuOpen = ref(false);
 </script>
 <template>
-  <header class="bg-sw-panel/80 backdrop-blur-sm sticky top-0 z-50 border-b border-sw-border">
+  <header class="bg-sw-panel/45 backdrop-blur-sm sticky top-0 z-50 border-b border-sw-border">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-2xl font-starwars text-sw-dark">Puantorian A. H.</div>
+      <div class="text-2xl font-starwars text-sw-dark">Puantorian Antasena Handoko.</div>
       <ul class="hidden md:flex space-x-6 font-starwars text-sm">
         <li><a href="#profil" class="text-sw-text hover:text-sw-accent transition-colors">Profil</a></li>
         <li><a href="#pendidikan" class="text-sw-text hover:text-sw-accent transition-colors">Pendidikan</a></li>
