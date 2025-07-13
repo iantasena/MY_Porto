@@ -13,44 +13,64 @@ const educationHistory = [
     major: 'Ilmu Pengetahuan Alam'
   },
 ];
+
 const skills = [
-  {
-    "name": "Vue.js",
-    "level": "Mahir",
-    "width": "85%",
-    "colorClass": "bg-neon-green"
+  { 
+    name: 'Git & GitHub', 
+    level: 'Mahir', 
+    width: '80%',
+    colorClass: 'bg-neon-green' // Tertinggi -> Hijau
   },
-  {
-    "name": "TailwindCSS",
-    "level": "Mahir",
-    "width": "90%",
-    "colorClass": "bg-neon-cyan"
+  { 
+    name: 'Vue.js', 
+    level: 'Menengah', 
+    width: '65%',
+    colorClass: 'bg-neon-cyan'
   },
-  {
-    "name": "JavaScript",
-    "level": "Menengah",
-    "width": "75%",
-    "colorClass": "bg-neon-orange"
+  { 
+    name: 'Tailwind CSS', 
+    level: 'Menengah', 
+    width: '65%',
+    colorClass: 'bg-neon-cyan'
   },
-  {
-    "name": "Node.js",
-    "level": "Menengah",
-    "width": "60%",
-    "colorClass": "bg-neon-green"
+  { 
+    name: 'SQL (PostgreSQL)', 
+    level: 'Menengah', 
+    width: '65%',
+    colorClass: 'bg-neon-cyan'
   },
-  {
-    "name": "UI/UX Design",
-    "level": "Dasar",
-    "width": "50%",
-    "colorClass": "bg-neon-pink"
+  { 
+    name: 'HTML5 & CSS3', 
+    level: 'Menengah', 
+    width: '65%',
+    colorClass: 'bg-neon-cyan'
   },
-  {
-    "name": "Python",
-    "level": "Mahir",
-    "width": "80%",
-    "colorClass": "bg-neon-blue"
+  { 
+    name: 'Bootstrap', 
+    level: 'Menengah', 
+    width: '55%',
+    colorClass: 'bg-neon-cyan'
+  },
+  { 
+    name: 'JavaScript', 
+    level: 'Menengah', 
+    width: '50%',
+    colorClass: 'bg-neon-orange' // Menengah ke bawah -> Oranye
+  },
+  { 
+    name: 'Node.js', 
+    level: 'Menengah', 
+    width: '50%',
+    colorClass: 'bg-neon-orange' // Menengah ke bawah -> Oranye
+  },
+  { 
+    name: 'Express.js', 
+    level: 'basic', 
+    width: '30%',
+    colorClass: 'bg-neon-pink' // Terendah -> Merah/Pink
   }
 ];
+
 const projects = [
   {
     title: 'Website Lucien Avenue',

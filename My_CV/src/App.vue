@@ -5,7 +5,7 @@ import ProjectsSection from './components/Projects.vue';
 import { RouterView } from 'vue-router';
 </script>
 <template>
-<div class="bg-gray-100 font-sans">
+<div class="bg-space-dark text-space-text font-sans">
 <RouterView />
 </div>
 </template>
