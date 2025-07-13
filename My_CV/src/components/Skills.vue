@@ -27,7 +27,7 @@ onMounted(async () => {
 
         <div v-for="skill in skills" :key="skill.name" class="bg-sw-panel p-4 rounded-lg border border-sw-border text-left">
           <div class="flex justify-between items-center mb-1">
-            <h3 class="font-sans text-sw-dark font-bold">{{ skill.name }}</h3>
+            <h3 class="font-starwars text-sw-dark font-bold">{{ skill.name }}</h3>
             <p class="text-sm text-sw-text">{{ skill.level }}</p>
           </div>
           <div class="w-full bg-sw-border rounded-full h-2.5">
