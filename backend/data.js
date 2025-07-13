@@ -14,15 +14,15 @@ const educationHistory = [
   },
 ];
 const skills = [
-  { name: 'JavaScript', level: 'Mahir' },
-  { name: 'Vue.js', level: 'Mahir' },
-  { name: 'Node.js', level: 'Menengah' },
-  { name: 'Tailwind CSS', level: 'Mahir' },
-  { name: 'Bootstrap', level: 'Dasar' },
-  { name: 'Express.js', level: 'Menengah'    },
-  { name: 'SQL (PostgreSQL)', level: 'Menengah' },
-  { name: 'HTML5 & CSS3', level: 'Mahir' },
-  { name: 'Git & GitHub', level: 'Mahir' }
+  { name: 'JavaScript', level: 'Menengah', width:'50%' },
+  { name: 'Vue.js', level: 'Menengah', width:'65%' },
+  { name: 'Node.js', level: 'Menengah', width:'50%' },
+  { name: 'Tailwind CSS', level: 'Menengah', width:'65%' },
+  { name: 'Bootstrap', level: 'Menengah', width:'55%' },
+  { name: 'Express.js', level: 'basic', width:'30%'},
+  { name: 'SQL (PostgreSQL)', level: 'Menengah', width:'65%'},
+  { name: 'HTML5 & CSS3', level: 'Menengah', width:'65%'},
+  { name: 'Git & GitHub', level: 'Mahir', width:'80%' }
 ];
 const projects = [
   {

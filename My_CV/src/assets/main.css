@@ -26,7 +26,6 @@ body {
   background-size: 5rem 5rem; /* Ukuran kotak-kotak panel */
   background-attachment: fixed;
 
-  cursor: url('/lightsaber.cur'), auto;
 }
 
 a, button {
