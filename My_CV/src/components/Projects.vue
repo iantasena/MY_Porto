@@ -32,7 +32,7 @@ onMounted(async () => {
             <p class="text-sw-text mb-4 font-sans">{{ project.description }}</p>
 
             <div class="mb-4">
-              <span v-for="t in project.tech" :key="t" class="inline-block bg-blue-100 text-sw-accent text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full font-sans">
+              <span v-for="t in project.tech" :key="t" class="inline-block bg-space-border text-neon-cyan text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full font-sans">
                 {{ t }}
               </span>
             </div>

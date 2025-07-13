@@ -28,7 +28,7 @@ onMounted(async () => {
             <h3 class="text-2xl font-bold text-sw-dark font-sans">{{ edu.institution }}</h3>
             <p class="text-sw-text font-sans">{{ edu.major }}</p>
           </div>
-          <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-sw-accent rounded-full z-10 border-4 border-[#f0f0f0]"></div>
+          <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-neon-cyan rounded-full z-10 border-4 border-space-dark"></div>
         </div>
       </div>
     </div>
