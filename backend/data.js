@@ -18,56 +18,47 @@ const skills = [
   { 
     name: 'Git & GitHub', 
     level: 'Mahir', 
-    width: '80%',
-    colorClass: 'bg-neon-green' // Tertinggi -> Hijau
+    width: '80%'// Tertinggi -> Hijau
   },
   { 
     name: 'Vue.js', 
     level: 'Menengah', 
-    width: '65%',
-    colorClass: 'bg-neon-cyan'
+    width: '65%'
   },
   { 
     name: 'Tailwind CSS', 
     level: 'Menengah', 
-    width: '65%',
-    colorClass: 'bg-neon-cyan'
+    width: '65%'
   },
   { 
     name: 'SQL (PostgreSQL)', 
     level: 'Menengah', 
-    width: '65%',
-    colorClass: 'bg-neon-cyan'
+    width: '65%'
   },
   { 
     name: 'HTML5 & CSS3', 
     level: 'Menengah', 
-    width: '65%',
-    colorClass: 'bg-neon-cyan'
+    width: '65%'
   },
   { 
     name: 'Bootstrap', 
     level: 'Menengah', 
-    width: '55%',
-    colorClass: 'bg-neon-cyan'
+    width: '55%'
   },
   { 
     name: 'JavaScript', 
     level: 'Menengah', 
-    width: '50%',
-    colorClass: 'bg-neon-orange' // Menengah ke bawah -> Oranye
+    width: '50%'
   },
   { 
     name: 'Node.js', 
     level: 'Menengah', 
-    width: '50%',
-    colorClass: 'bg-neon-orange' // Menengah ke bawah -> Oranye
+    width: '50%'
   },
   { 
     name: 'Express.js', 
     level: 'basic', 
-    width: '30%',
-    colorClass: 'bg-neon-pink' // Terendah -> Merah/Pink
+    width: '30%'
   }
 ];
 

@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,8 +6,6 @@
 html {
   scroll-behavior: smooth;
 }
-
-
 
 a, button {
   cursor: pointer; /* Bisa diganti dengan ikon lain jika mau */
