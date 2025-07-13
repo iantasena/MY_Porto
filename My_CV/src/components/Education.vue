@@ -16,22 +16,31 @@ onMounted(async () => {
 </script>
 
 <template>
-<section id="pendidikan" class="py-20 bg-sw-panel/80 backdrop-blur-sm">
-  <div class="container mx-auto px-6">
-    <SectionTitle title="Riwayat Pendidikan" />
-    <div class="relative mt-12">
-      <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-sw-border" aria-hidden="true"></div>
-      <div class="space-y-8">
-        <div v-for="(edu, index) in educationHistory" :key="edu.id" class="relative flex items-center" :class="[index % 2 === 0 ? 'justify-start' : 'justify-end']">
-          <div class="w-1/2 px-4" :class="[index % 2 === 0 ? 'text-right' : 'text-left']">
-            <p class="font-semibold text-sw-accent font-sans">{{ edu.period }}</p>
-            <h3 class="text-2xl font-bold text-sw-dark font-sans">{{ edu.institution }}</h3>
-            <p class="text-sw-text font-sans">{{ edu.major }}</p>
+  <section id="pendidikan" class="py-20 bg-sw-panel/80 backdrop-blur-sm">
+    <div class="container mx-auto px-6">
+      <SectionTitle title="Riwayat Pendidikan" />
+      <div class="relative mt-12">
+        <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-sw-border" aria-hidden="true"></div>
+
+        <div class="space-y-8">
+          <div v-for="(edu, index) in educationHistory" :key="edu.id" class="relative flex items-center" :class="[index % 2 === 0 ? 'justify-start' : 'justify-end']">
+
+            <div
+              class="absolute top-1/2 -translate-y-1/2 h-0.5 w-1/2 bg-sw-border"
+              :class="[index % 2 === 0 ? 'left-0' : 'left-1/2']"
+              aria-hidden="true"
+            ></div>
+
+            <div class="w-1/2 px-4 z-10" :class="[index % 2 === 0 ? 'text-right' : 'text-left']">
+              <p class="font-semibold text-sw-accent font-sans">{{ edu.period }}</p>
+              <h3 class="text-2xl font-bold text-sw-dark font-sans">{{ edu.institution }}</h3>
+              <p class="text-sw-text font-sans">{{ edu.major }}</p>
+            </div>
+
+            <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-neon-cyan rounded-full z-10 border-4 border-space-dark"></div>
           </div>
-          <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-neon-cyan rounded-full z-10 border-4 border-space-dark"></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
