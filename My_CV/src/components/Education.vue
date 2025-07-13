@@ -23,11 +23,7 @@ onMounted(async () => {
         <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-neon-cyan" aria-hidden="true"></div>
         <div class="space-y-8">
           <div v-for="(edu, index) in educationHistory" :key="edu.id" class="relative flex items-center" :class="[index % 2 === 0 ? 'justify-start' : 'justify-end']">
-            <div
-              class="absolute top-1/2 -translate-y-1/2 h-0.5 w-1/2 bg-neon-cyan"
-              :class="[index % 2 === 0 ? 'left-0' : 'left-1/2']"
-              aria-hidden="true"
-            ></div>
+           
 
             <div
               class="w-1/2 px-4 z-10 bg-sw-panel"
