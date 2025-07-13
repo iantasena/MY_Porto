@@ -20,10 +20,15 @@ onMounted(async () => {
     <div class="container mx-auto px-6">
       <SectionTitle title="Keahlian & Teknologi" />
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-        <div v-for="skill in skills" :key="skill.name" class="bg-sw-panel p-6 rounded-lg border border-sw-border text-center transform hover:border-sw-accent transition-all duration-300 hover:-translate-y-1">
-          <h3 class="text-xl font-starwars text-sw-dark">{{ skill.name }}</h3>
-          <p class="text-sw-text mt-2">{{ skill.level }}</p>
-        </div>
+        <div v-for="skill in skills" :key="skill.name" class="bg-sw-panel p-4 rounded-lg border border-sw-border text-left">
+  <div class="flex justify-between items-center mb-1">
+    <h3 class="font-sans text-sw-dark font-bold">{{ skill.name }}</h3>
+    <p class="text-sm text-sw-text">{{ skill.level }}</p>
+  </div>
+  <div class="w-full bg-sw-border rounded-full h-2.5">
+    <div class="bg-sw-blue h-2.5 rounded-full shadow-lg shadow-sw-blue/50" :style="{ width: skill.width }"></div>
+  </div>
+</div>
       </div>
     </div>
   </section>
